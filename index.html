@@ -17,20 +17,20 @@
 				
 				<main>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lorem lacus, sodales eu imperdiet sit amet, congue eu neque. Mauris consequat mollis lacus, id mattis dolor pellentesque non. Vivamus in luctus leo, eget venenatis nunc. Ut hendrerit gravida fringilla. Integer vel malesuada dui. Quisque id elementum enim, eget elementum massa. Donec feugiat mattis rutrum. Curabitur augue ipsum, volutpat in arcu quis, facilisis molestie tortor. Fusce eu fringilla dui, eu pellentesque mi. Vestibulum quis dolor suscipit, volutpat ex nec, gravida leo. Pellentesque vestibulum mollis ipsum, eu posuere lorem euismod vehicula. Phasellus ut turpis sed urna euismod vestibulum. Aenean feugiat egestas eros, viverra pretium elit auctor sed.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lorem lacus, sodales eu imperdiet sit amet, congue eu neque. Mauris consequat mollis lacus, id mattis dolor pellentesque non.
 					</p>
 			
 					<p>
-						Vestibulum quis dolor suscipit, volutpat ex nec, gravida leo. Pellentesque vestibulum mollis ipsum, eu posuere lorem euismod vehicula. Phasellus ut turpis sed urna euismod vestibulum. Aenean feugiat egestas eros, viverra pretium elit auctor sed.
+						Vestibulum quis dolor suscipit, volutpat ex nec, gravida leo. Pellentesque vestibulum mollis ipsum, eu posuere lorem euismod vehicula. Phasellus ut turpis sed urna euismod vestibulum.
 					</p>
 			
 					<p>
-						Fusce eu fringilla dui, eu pellentesque mi. Vestibulum quis dolor suscipit, volutpat ex nec, gravida leo. Pellentesque vestibulum mollis ipsum, eu posuere lorem euismod vehicula. Phasellus ut turpis sed urna euismod vestibulum. Aenean feugiat egestas eros, viverra pretium elit auctor sed.
+						Fusce eu fringilla dui, eu pellentesque mi. Vestibulum quis dolor suscipit, volutpat ex nec, gravida leo. Pellentesque vestibulum mollis ipsum, eu posuere lorem euismod vehicula.
 					</p>
 				</main>
 					
 				<section id="buttons">
-					<button>+ Adicionar ideia</button>
+					<button onclick="onOff()">+ Adicionar ideia</button>
 					<button class="fat">Ver todas</button>
 				</section>
 	
@@ -85,6 +85,44 @@
 			</section>
 		</div>
 		
+		
+		<!--MODAL-->
+		<div id="modal" class="hide">
+			<div class="content">
+				<h1>Nova Ideia</h1>
+				
+				<form action="/">
+					
+					<div class="input-wrapper">
+						<label for="title">Título da Ideia</label>
+						<input type="text" name="title"/>
+					</div>
+					
+					<div class="input-wrapper">
+						<label for="category">Categoria</label>
+						<input type="text" name="category"/>
+					</div>
+					
+					<div class="input-wrapper">
+						<label for="image">Link da Imagem</label>
+						<input type="url" name="image"/>
+					</div>
+					
+					<div class="input-wrapper">
+						<label for="description">Digite uma decrição para essa ideia</label>
+						<textarea name="description" cols="30" rows="10"></textarea>
+					</div>
+					
+					<div class="input-wrapper">
+						<label for="link">Link da ideia</label>
+						<input type="url" name="link"/>
+					</div>
+					
+					<a href="#" onclick="onOff()">Voltar</a>
+					<button type="submit">Salvar</button>
+				</form>
+			</div>
+		</div>
 		
 		
 		
